@@ -5,12 +5,35 @@
  */
 package shawa;
 
+import javax.swing.JTextField;
+
 /**
  *
  * @author jmsan
  */
 public class CT_ref extends javax.swing.JDialog {
 
+    public JTextField getjTextField1() {
+        return jTextField1;
+    }
+
+    public JTextField getjTextField2() {
+        return jTextField2;
+    }
+
+    public JTextField getjTextField4() {
+        return jTextField4;
+    }
+
+    public JTextField getjTextField6() {
+        return jTextField6;
+    }
+
+    public JTextField getjTextField7() {
+        return jTextField7;
+    }
+    
+    
     /**
      * Creates new form CT_ref
      */

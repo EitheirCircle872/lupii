@@ -5,20 +5,27 @@
  */
 package shawa;
 
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
 /**
  *
  * @author jmsan
  */
 public class Entradas extends javax.swing.JDialog {
 
+    final private Database db;
+    
     /**
-     * Creates new form Entradas
+     * Creates new form
      * @param parent
+     * @param db
      * @param modal
      */
-    public Entradas(java.awt.Frame parent, boolean modal) {
-        super(parent, modal);
+     public Entradas(java.awt.Frame parent, Database db) {
+        super(parent, true);
         initComponents();
+        this.db = db;
     }
 
     /**
@@ -71,13 +78,15 @@ public class Entradas extends javax.swing.JDialog {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(Bebidas, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(Preparados, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(Refrigerador, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(Verduras, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(Bebidas, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(Preparados))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(Verduras)
+                        .addGap(18, 18, 18)
+                        .addComponent(Refrigerador)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -86,12 +95,12 @@ public class Entradas extends javax.swing.JDialog {
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(Bebidas)
-                    .addComponent(Refrigerador))
+                    .addComponent(Preparados))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(Preparados)
-                    .addComponent(Verduras))
-                .addContainerGap(29, Short.MAX_VALUE))
+                    .addComponent(Verduras)
+                    .addComponent(Refrigerador))
+                .addContainerGap(75, Short.MAX_VALUE))
         );
 
         pack();
@@ -100,9 +109,39 @@ public class Entradas extends javax.swing.JDialog {
 
     private void BebidasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BebidasActionPerformed
         // TODO add your handling code here:
-        
         En_Bebi eb = new En_Bebi(new javax.swing.JFrame(), true);
+        //Primis p = new Primis();
+        final String sql = "SELECT bebidas_id AS we, proveedor_id AS we2, nombre_bebida AS we3, other_details as we4"
+                + " FROM bebidas";
+        //System.out.println(sql);
+        
+        
+        
+        try {
+             //int contador=0;
+            ResultSet rs = db.query(sql);
+           
+           //  System.out.println(contador);
+           
+             //   contador ++;
+                rs.next();
+                //System.out.println(rs.getString("we"));
+                eb.getB1().setText(rs.getString("we"));
+                rs.next();
+               // System.out.println(rs.getString("we"));
+                eb.getB2().setText(rs.getString("we"));
+                rs.next();
+                eb.getB3().setText(rs.getString("we"));
+                rs.next();
+                eb.getB4().setText(rs.getString("we"));
+            
+            // System.out.println(contador);
+        rs.first();
+        } catch (SQLException ex) {
+             System.out.println("error");
+        }
         eb.setVisible(true);
+       
         
     }//GEN-LAST:event_BebidasActionPerformed
 
@@ -110,6 +149,38 @@ public class Entradas extends javax.swing.JDialog {
         // TODO add your handling code here:
         
         En_Pre epr = new En_Pre(new javax.swing.JFrame(), true);
+        
+        //Primis p = new Primis();
+        final String sql = "SELECT bebidas_id AS we, proveedor_id AS we2, nombre_bebida AS we3, other_details as we4"
+                + " FROM bebidas";
+        //System.out.println(sql);
+        
+        
+        
+        try {
+             //int contador=0;
+            ResultSet rs = db.query(sql);
+           
+           //  System.out.println(contador);
+           
+             //   contador ++;
+                rs.next();
+                //System.out.println(rs.getString("we"));
+                epr.getjTextField1().setText(rs.getString("we"));
+                rs.next();
+               // System.out.println(rs.getString("we"));
+                epr.getjTextField2().setText(rs.getString("we"));
+                rs.next();
+                epr.getjTextField3().setText(rs.getString("we"));
+                rs.next();
+                epr.getjTextField4().setText(rs.getString("we"));
+            
+            // System.out.println(contador);
+        rs.first();
+        } catch (SQLException ex) {
+             System.out.println("error");
+        }
+        
         epr.setVisible(true);
         
     }//GEN-LAST:event_PreparadosActionPerformed
@@ -118,6 +189,38 @@ public class Entradas extends javax.swing.JDialog {
         // TODO add your handling code here:
         
         En_Ver ev = new En_Ver(new javax.swing.JFrame(), true);
+        
+         //Primis p = new Primis();
+        final String sql = "SELECT bebidas_id AS we, proveedor_id AS we2, nombre_bebida AS we3, other_details as we4"
+                + " FROM bebidas";
+        //System.out.println(sql);
+        
+        
+        
+        try {
+             //int contador=0;
+            ResultSet rs = db.query(sql);
+           
+           //  System.out.println(contador);
+           
+             //   contador ++;
+                rs.next();
+                //System.out.println(rs.getString("we"));
+                ev.getjTextField1().setText(rs.getString("we"));
+                rs.next();
+               // System.out.println(rs.getString("we"));
+                ev.getjTextField2().setText(rs.getString("we"));
+                rs.next();
+                ev.getjTextField3().setText(rs.getString("we"));
+                rs.next();
+                ev.getjTextField4().setText(rs.getString("we"));
+            
+            // System.out.println(contador);
+        rs.first();
+        } catch (SQLException ex) {
+             System.out.println("error");
+        }
+        
         ev.setVisible(true);
         
     }//GEN-LAST:event_VerdurasActionPerformed
@@ -126,6 +229,38 @@ public class Entradas extends javax.swing.JDialog {
         // TODO add your handling code here:
         
         En_Ref er = new En_Ref(new javax.swing.JFrame(), true);
+        
+         //Primis p = new Primis();
+        final String sql = "SELECT bebidas_id AS we, proveedor_id AS we2, nombre_bebida AS we3, other_details as we4"
+                + " FROM bebidas";
+        //System.out.println(sql);
+        
+        
+        
+        try {
+             //int contador=0;
+            ResultSet rs = db.query(sql);
+           
+           //  System.out.println(contador);
+           
+             //   contador ++;
+                rs.next();
+                //System.out.println(rs.getString("we"));
+                er.getjTextField1().setText(rs.getString("we"));
+                rs.next();
+               // System.out.println(rs.getString("we"));
+                er.getjTextField2().setText(rs.getString("we"));
+                rs.next();
+                er.getjTextField3().setText(rs.getString("we"));
+                rs.next();
+                er.getjTextField4().setText(rs.getString("we"));
+            
+            // System.out.println(contador);
+        rs.first();
+        } catch (SQLException ex) {
+             System.out.println("error");
+        }
+        
         er.setVisible(true);
         
     }//GEN-LAST:event_RefrigeradorActionPerformed
@@ -135,7 +270,8 @@ public class Entradas extends javax.swing.JDialog {
      */
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
-        
+        Database po;
+        po=null;
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
          * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
@@ -160,8 +296,9 @@ public class Entradas extends javax.swing.JDialog {
 
         /* Create and display the dialog */
         java.awt.EventQueue.invokeLater(new Runnable() {
+            @Override
             public void run() {
-                Entradas dialog = new Entradas(new javax.swing.JFrame(), true);
+                Entradas dialog = new Entradas(new javax.swing.JFrame(),po);
                 dialog.addWindowListener(new java.awt.event.WindowAdapter() {
                     @Override
                     public void windowClosing(java.awt.event.WindowEvent e) {

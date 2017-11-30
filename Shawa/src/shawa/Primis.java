@@ -5,17 +5,26 @@
  */
 package shawa;
 
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
 /**
  *
  * @author jmsan
  */
 public class Primis extends javax.swing.JFrame {
-
+    private final String USER = "JM";
+    private final String PASS = "kiko10";
+    final private Database db;
+    
     /**
      * Creates new form
      */
     public Primis() {
+        db = Database.getDatabase(USER, PASS);
         initComponents();
+        
+        
     }
 
     /**
@@ -127,7 +136,7 @@ public class Primis extends javax.swing.JFrame {
     private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
         // TODO add your handling code here:
 
-         new Entradas(this, true).setVisible(true);
+         new Entradas(this, db).setVisible(true);
 
 
     }//GEN-LAST:event_jMenuItem2ActionPerformed
@@ -135,29 +144,207 @@ public class Primis extends javax.swing.JFrame {
     private void jMenuItem5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem5ActionPerformed
         // TODO add your handling code here:
 
-       new Consumo_total(this, true).setVisible(true);
+       new Consumo_total(this, db).setVisible(true);
 
     }//GEN-LAST:event_jMenuItem5ActionPerformed
 
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
         // TODO add your handling code here:
 
-        new D(this, true).setVisible(true);
+        new D(this, db).setVisible(true);
 
     }//GEN-LAST:event_jMenuItem1ActionPerformed
 
     private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
         // TODO add your handling code here:\
 
-        new E(this, true).setVisible(true);
+        new E(this, db).setVisible(true);
 
     }//GEN-LAST:event_jMenuItem3ActionPerformed
 
     private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
         // TODO add your handling code here:
         
-        new D(this, true).setVisible(true);
+        new E (this, db).setVisible(true);
         
+        E e = new E(new javax.swing.JFrame(), true);
+        //Primis p = new Primis();
+        final String sql = "SELECT bebidas_id AS we, proveedor_id AS we2, nombre_bebida AS we3, other_details as we4"
+                + " FROM bebidas";
+        //System.out.println(sql);
+        
+        
+        
+        try {
+             //int contador=0;
+            ResultSet rs = db.query(sql);
+           
+           //  System.out.println(contador);
+           
+             //   contador ++;
+                rs.next();
+                e.getBeb1().setText(rs.getString("we"));
+               rs.next();
+                e.getBeb2().setText(rs.getString("we"));
+                rs.next();
+                e.getBeb3().setText(rs.getString("we"));
+                rs.next();
+                e.getBeb4().setText(rs.getString("we"));
+                rs.next();
+                e.getBeb5().setText(rs.getString("we"));
+                rs.next();
+                e.getBeb6().setText(rs.getString("we"));
+                rs.next();
+                e.getBeb7().setText(rs.getString("we"));
+                rs.next();
+                e.getBeb8().setText(rs.getString("we"));
+                rs.next();
+                e.getBeb9().setText(rs.getString("we"));
+                rs.next();
+                e.getBeb10().setText(rs.getString("we"));
+                rs.next();
+                e.getBeb11().setText(rs.getString("we"));
+                rs.next();
+                e.getBeb12().setText(rs.getString("we"));
+                rs.next();
+                e.getBeb13().setText(rs.getString("we"));
+                rs.next();
+                e.getBeb14().setText(rs.getString("we"));
+                rs.next();
+                e.getBeb15().setText(rs.getString("we"));
+                rs.next();
+                e.getBeb16().setText(rs.getString("we"));
+                
+                
+            
+            // System.out.println(contador);
+        rs.first();
+        } catch (SQLException ex) {
+             System.out.println("error");
+        }
+       
+    //-----------------------------------------------------------------------------------------------
+    //-----------------------------------------------------------------------------------------------
+        
+        //Primis p = new Primis();
+        final String sql2 = "SELECT bebidas_id AS we, proveedor_id AS we2, nombre_bebida AS we3, other_details as we4"
+                + " FROM bebidas";
+        //System.out.println(sql);
+        
+        
+        
+        try {
+             //int contador=0;
+            ResultSet rs2 = db.query(sql2);
+           
+           //  System.out.println(contador);
+           
+             //   contador ++;
+                rs2.next();
+                e.getPre1().setText(rs2.getString("we"));
+                rs2.next();
+                e.getPre2().setText(rs2.getString("we"));
+                rs2.next();
+                e.getPre3().setText(rs2.getString("we"));
+                rs2.next();
+                e.getPre4().setText(rs2.getString("we"));
+                rs2.next();
+                e.getPre5().setText(rs2.getString("we"));
+                rs2.next();
+                e.getPre6().setText(rs2.getString("we"));
+                rs2.next();
+                e.getPre7().setText(rs2.getString("we"));
+                rs2.next();
+                e.getPre8().setText(rs2.getString("we"));
+                rs2.next();
+                e.getPre9().setText(rs2.getString("we"));
+                rs2.next();
+                e.getPre10().setText(rs2.getString("we"));
+                rs2.next();
+                e.getPre11().setText(rs2.getString("we"));
+                
+                
+                
+            
+            // System.out.println(contador);
+        rs2.first();
+        } catch (SQLException ex) {
+             System.out.println("error");
+        }
+        
+    //-------------------------------------------------------------------------
+    //-------------------------------------------------------------------------
+    
+        
+        //Primis p = new Primis();
+        final String sql3 = "SELECT bebidas_id AS we, proveedor_id AS we2, nombre_bebida AS we3, other_details as we4"
+                + " FROM bebidas";
+        //System.out.println(sql);
+        
+        
+        
+        try {
+             //int contador=0;
+            ResultSet rs3 = db.query(sql3);
+           
+           //  System.out.println(contador);
+           
+             //   contador ++;
+                rs3.next();
+                e.getjTextField1().setText(rs3.getString("we"));
+                rs3.next();
+                e.getjTextField2().setText(rs3.getString("we"));
+                rs3.next();
+                e.getjTextField6().setText(rs3.getString("we"));
+                rs3.next();
+                e.getjTextField7().setText(rs3.getString("we"));
+                rs3.next();
+                e.getjTextField8().setText(rs3.getString("we"));
+                rs3.next();
+                e.getjTextField9().setText(rs3.getString("we"));
+            
+            // System.out.println(contador);
+        rs3.first();
+        } catch (SQLException ex) {
+             System.out.println("error");
+        }
+        
+    //--------------------------------------------------------------------------
+    //--------------------------------------------------------------------------
+    
+        
+        //Primis p = new Primis();
+        final String sql4 = "SELECT bebidas_id AS we, proveedor_id AS we2, nombre_bebida AS we3, other_details as we4"
+                + " FROM bebidas";
+        //System.out.println(sql);
+        
+        
+        
+        try {
+             //int contador=0;
+            ResultSet rs4 = db.query(sql4);
+           
+           //  System.out.println(contador);
+           
+             //   contador ++;
+                rs4.next();
+                e.getRef1().setText(rs4.getString("we"));
+                rs4.next();
+                e.getRef2().setText(rs4.getString("we"));
+                rs4.next();
+                e.getRef3().setText(rs4.getString("we"));
+                rs4.next();
+                e.getRef4().setText(rs4.getString("we"));
+                rs4.next();
+                e.getRef5().setText(rs4.getString("we"));
+                
+            
+            // System.out.println(contador);
+        rs4.first();
+        } catch (SQLException ex) {
+             System.out.println("error");
+        }
+        e.setVisible(true);
     }//GEN-LAST:event_jMenuItem4ActionPerformed
 
     /**

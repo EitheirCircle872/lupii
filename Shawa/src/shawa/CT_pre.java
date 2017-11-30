@@ -5,12 +5,59 @@
  */
 package shawa;
 
+import javax.swing.JTextField;
+
 /**
  *
  * @author jmsan
  */
 public class CT_pre extends javax.swing.JDialog {
 
+    public JTextField getPre1() {
+        return pre1;
+    }
+
+    public JTextField getPre10() {
+        return pre10;
+    }
+
+    public JTextField getPre11() {
+        return pre11;
+    }
+
+    public JTextField getPre2() {
+        return pre2;
+    }
+
+    public JTextField getPre3() {
+        return pre3;
+    }
+
+    public JTextField getPre4() {
+        return pre4;
+    }
+
+    public JTextField getPre5() {
+        return pre5;
+    }
+
+    public JTextField getPre6() {
+        return pre6;
+    }
+
+    public JTextField getPre7() {
+        return pre7;
+    }
+
+    public JTextField getPre8() {
+        return pre8;
+    }
+
+    public JTextField getPre9() {
+        return pre9;
+    }
+    
+    
     /**
      * Creates new form CT_pre
      */
@@ -29,27 +76,27 @@ public class CT_pre extends javax.swing.JDialog {
     private void initComponents() {
 
         jTextField34 = new javax.swing.JTextField();
-        jTextField18 = new javax.swing.JTextField();
+        pre6 = new javax.swing.JTextField();
         jTextField35 = new javax.swing.JTextField();
-        jTextField36 = new javax.swing.JTextField();
+        pre10 = new javax.swing.JTextField();
         jTextField37 = new javax.swing.JTextField();
-        jTextField38 = new javax.swing.JTextField();
+        pre9 = new javax.swing.JTextField();
         jTextField39 = new javax.swing.JTextField();
-        jTextField40 = new javax.swing.JTextField();
+        pre8 = new javax.swing.JTextField();
         jTextField41 = new javax.swing.JTextField();
-        jTextField42 = new javax.swing.JTextField();
+        pre11 = new javax.swing.JTextField();
         jTextField43 = new javax.swing.JTextField();
-        jTextField44 = new javax.swing.JTextField();
+        pre1 = new javax.swing.JTextField();
         jTextField45 = new javax.swing.JTextField();
-        jTextField46 = new javax.swing.JTextField();
+        pre2 = new javax.swing.JTextField();
         jTextField47 = new javax.swing.JTextField();
-        jTextField48 = new javax.swing.JTextField();
+        pre3 = new javax.swing.JTextField();
         jTextField49 = new javax.swing.JTextField();
-        jTextField50 = new javax.swing.JTextField();
+        pre5 = new javax.swing.JTextField();
         jTextField51 = new javax.swing.JTextField();
-        jTextField52 = new javax.swing.JTextField();
+        pre4 = new javax.swing.JTextField();
         jTextField53 = new javax.swing.JTextField();
-        jTextField54 = new javax.swing.JTextField();
+        pre7 = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
 
@@ -63,10 +110,10 @@ public class CT_pre extends javax.swing.JDialog {
             }
         });
 
-        jTextField18.setEditable(false);
-        jTextField18.addActionListener(new java.awt.event.ActionListener() {
+        pre6.setEditable(false);
+        pre6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField18ActionPerformed(evt);
+                pre6ActionPerformed(evt);
             }
         });
 
@@ -78,10 +125,10 @@ public class CT_pre extends javax.swing.JDialog {
             }
         });
 
-        jTextField36.setEditable(false);
-        jTextField36.addActionListener(new java.awt.event.ActionListener() {
+        pre10.setEditable(false);
+        pre10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField36ActionPerformed(evt);
+                pre10ActionPerformed(evt);
             }
         });
 
@@ -93,10 +140,10 @@ public class CT_pre extends javax.swing.JDialog {
             }
         });
 
-        jTextField38.setEditable(false);
-        jTextField38.addActionListener(new java.awt.event.ActionListener() {
+        pre9.setEditable(false);
+        pre9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField38ActionPerformed(evt);
+                pre9ActionPerformed(evt);
             }
         });
 
@@ -108,10 +155,10 @@ public class CT_pre extends javax.swing.JDialog {
             }
         });
 
-        jTextField40.setEditable(false);
-        jTextField40.addActionListener(new java.awt.event.ActionListener() {
+        pre8.setEditable(false);
+        pre8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField40ActionPerformed(evt);
+                pre8ActionPerformed(evt);
             }
         });
 
@@ -123,10 +170,10 @@ public class CT_pre extends javax.swing.JDialog {
             }
         });
 
-        jTextField42.setEditable(false);
-        jTextField42.addActionListener(new java.awt.event.ActionListener() {
+        pre11.setEditable(false);
+        pre11.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField42ActionPerformed(evt);
+                pre11ActionPerformed(evt);
             }
         });
 
@@ -138,10 +185,10 @@ public class CT_pre extends javax.swing.JDialog {
             }
         });
 
-        jTextField44.setEditable(false);
-        jTextField44.addActionListener(new java.awt.event.ActionListener() {
+        pre1.setEditable(false);
+        pre1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField44ActionPerformed(evt);
+                pre1ActionPerformed(evt);
             }
         });
 
@@ -153,10 +200,10 @@ public class CT_pre extends javax.swing.JDialog {
             }
         });
 
-        jTextField46.setEditable(false);
-        jTextField46.addActionListener(new java.awt.event.ActionListener() {
+        pre2.setEditable(false);
+        pre2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField46ActionPerformed(evt);
+                pre2ActionPerformed(evt);
             }
         });
 
@@ -168,10 +215,10 @@ public class CT_pre extends javax.swing.JDialog {
             }
         });
 
-        jTextField48.setEditable(false);
-        jTextField48.addActionListener(new java.awt.event.ActionListener() {
+        pre3.setEditable(false);
+        pre3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField48ActionPerformed(evt);
+                pre3ActionPerformed(evt);
             }
         });
 
@@ -183,10 +230,10 @@ public class CT_pre extends javax.swing.JDialog {
             }
         });
 
-        jTextField50.setEditable(false);
-        jTextField50.addActionListener(new java.awt.event.ActionListener() {
+        pre5.setEditable(false);
+        pre5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField50ActionPerformed(evt);
+                pre5ActionPerformed(evt);
             }
         });
 
@@ -198,10 +245,10 @@ public class CT_pre extends javax.swing.JDialog {
             }
         });
 
-        jTextField52.setEditable(false);
-        jTextField52.addActionListener(new java.awt.event.ActionListener() {
+        pre4.setEditable(false);
+        pre4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField52ActionPerformed(evt);
+                pre4ActionPerformed(evt);
             }
         });
 
@@ -213,10 +260,10 @@ public class CT_pre extends javax.swing.JDialog {
             }
         });
 
-        jTextField54.setEditable(false);
-        jTextField54.addActionListener(new java.awt.event.ActionListener() {
+        pre7.setEditable(false);
+        pre7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField54ActionPerformed(evt);
+                pre7ActionPerformed(evt);
             }
         });
 
@@ -244,11 +291,11 @@ public class CT_pre extends javax.swing.JDialog {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                    .addComponent(jTextField44)
-                                    .addComponent(jTextField46)
-                                    .addComponent(jTextField48)
-                                    .addComponent(jTextField52)
-                                    .addComponent(jTextField50, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(pre1)
+                                    .addComponent(pre2)
+                                    .addComponent(pre3)
+                                    .addComponent(pre4)
+                                    .addComponent(pre5, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(36, 36, 36)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addComponent(jTextField35, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -259,12 +306,12 @@ public class CT_pre extends javax.swing.JDialog {
                                         .addComponent(jTextField53, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                    .addComponent(jTextField18)
-                                    .addComponent(jTextField54)
-                                    .addComponent(jTextField40)
-                                    .addComponent(jTextField38)
-                                    .addComponent(jTextField36)
-                                    .addComponent(jTextField42, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(pre6)
+                                    .addComponent(pre7)
+                                    .addComponent(pre8)
+                                    .addComponent(pre9)
+                                    .addComponent(pre10)
+                                    .addComponent(pre11, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(36, 36, 36)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jTextField47, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -286,47 +333,47 @@ public class CT_pre extends javax.swing.JDialog {
                 .addComponent(jLabel3)
                 .addGap(29, 29, 29)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField44, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(pre1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jTextField49, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField46, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(pre2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jTextField51, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField48, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(pre3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jTextField53, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(12, 12, 12)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField52, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(pre4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jTextField34, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField50, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(pre5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jTextField35, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(pre6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jTextField37, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField54, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(pre7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jTextField39, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField40, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(pre8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jTextField41, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField38, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(pre9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jTextField43, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField36, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(pre10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jTextField45, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField42, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(pre11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jTextField47, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -341,89 +388,89 @@ public class CT_pre extends javax.swing.JDialog {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField34ActionPerformed
 
-    private void jTextField18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField18ActionPerformed
+    private void pre6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pre6ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField18ActionPerformed
+    }//GEN-LAST:event_pre6ActionPerformed
 
     private void jTextField35ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField35ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField35ActionPerformed
 
-    private void jTextField36ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField36ActionPerformed
+    private void pre10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pre10ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField36ActionPerformed
+    }//GEN-LAST:event_pre10ActionPerformed
 
     private void jTextField37ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField37ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField37ActionPerformed
 
-    private void jTextField38ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField38ActionPerformed
+    private void pre9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pre9ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField38ActionPerformed
+    }//GEN-LAST:event_pre9ActionPerformed
 
     private void jTextField39ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField39ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField39ActionPerformed
 
-    private void jTextField40ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField40ActionPerformed
+    private void pre8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pre8ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField40ActionPerformed
+    }//GEN-LAST:event_pre8ActionPerformed
 
     private void jTextField41ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField41ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField41ActionPerformed
 
-    private void jTextField42ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField42ActionPerformed
+    private void pre11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pre11ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField42ActionPerformed
+    }//GEN-LAST:event_pre11ActionPerformed
 
     private void jTextField43ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField43ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField43ActionPerformed
 
-    private void jTextField44ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField44ActionPerformed
+    private void pre1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pre1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField44ActionPerformed
+    }//GEN-LAST:event_pre1ActionPerformed
 
     private void jTextField45ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField45ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField45ActionPerformed
 
-    private void jTextField46ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField46ActionPerformed
+    private void pre2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pre2ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField46ActionPerformed
+    }//GEN-LAST:event_pre2ActionPerformed
 
     private void jTextField47ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField47ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField47ActionPerformed
 
-    private void jTextField48ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField48ActionPerformed
+    private void pre3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pre3ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField48ActionPerformed
+    }//GEN-LAST:event_pre3ActionPerformed
 
     private void jTextField49ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField49ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField49ActionPerformed
 
-    private void jTextField50ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField50ActionPerformed
+    private void pre5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pre5ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField50ActionPerformed
+    }//GEN-LAST:event_pre5ActionPerformed
 
     private void jTextField51ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField51ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField51ActionPerformed
 
-    private void jTextField52ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField52ActionPerformed
+    private void pre4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pre4ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField52ActionPerformed
+    }//GEN-LAST:event_pre4ActionPerformed
 
     private void jTextField53ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField53ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField53ActionPerformed
 
-    private void jTextField54ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField54ActionPerformed
+    private void pre7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pre7ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField54ActionPerformed
+    }//GEN-LAST:event_pre7ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
@@ -474,27 +521,27 @@ public class CT_pre extends javax.swing.JDialog {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JTextField jTextField18;
     private javax.swing.JTextField jTextField34;
     private javax.swing.JTextField jTextField35;
-    private javax.swing.JTextField jTextField36;
     private javax.swing.JTextField jTextField37;
-    private javax.swing.JTextField jTextField38;
     private javax.swing.JTextField jTextField39;
-    private javax.swing.JTextField jTextField40;
     private javax.swing.JTextField jTextField41;
-    private javax.swing.JTextField jTextField42;
     private javax.swing.JTextField jTextField43;
-    private javax.swing.JTextField jTextField44;
     private javax.swing.JTextField jTextField45;
-    private javax.swing.JTextField jTextField46;
     private javax.swing.JTextField jTextField47;
-    private javax.swing.JTextField jTextField48;
     private javax.swing.JTextField jTextField49;
-    private javax.swing.JTextField jTextField50;
     private javax.swing.JTextField jTextField51;
-    private javax.swing.JTextField jTextField52;
     private javax.swing.JTextField jTextField53;
-    private javax.swing.JTextField jTextField54;
+    private javax.swing.JTextField pre1;
+    private javax.swing.JTextField pre10;
+    private javax.swing.JTextField pre11;
+    private javax.swing.JTextField pre2;
+    private javax.swing.JTextField pre3;
+    private javax.swing.JTextField pre4;
+    private javax.swing.JTextField pre5;
+    private javax.swing.JTextField pre6;
+    private javax.swing.JTextField pre7;
+    private javax.swing.JTextField pre8;
+    private javax.swing.JTextField pre9;
     // End of variables declaration//GEN-END:variables
 }

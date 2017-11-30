@@ -5,18 +5,25 @@
  */
 package shawa;
 
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+
 /**
  *
  * @author jmsan
  */
 public class Consumo_total extends javax.swing.JDialog {
 
+    final private Database db;
     /**
      * Creates new form B
      */
-    public Consumo_total(java.awt.Frame parent, boolean modal) {
-        super(parent, modal);
+    public Consumo_total(java.awt.Frame parent, Database db) {
+        super(parent,true);
         initComponents();
+        this.db = db;
+        
     }
 
     /**
@@ -97,30 +104,189 @@ public class Consumo_total extends javax.swing.JDialog {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
-
-        new CT_ver(new javax.swing.JFrame(), true).setVisible(true);
+        CT_ver cv = new CT_ver(new javax.swing.JFrame(), true);
+        //Primis p = new Primis();
+        final String sql = "SELECT bebidas_id AS we, proveedor_id AS we2, nombre_bebida AS we3, other_details as we4"
+                + " FROM bebidas";
+        //System.out.println(sql);
+        
+        
+        
+        try {
+             //int contador=0;
+            ResultSet rs = db.query(sql);
+           
+           //  System.out.println(contador);
+           
+             //   contador ++;
+                rs.next();
+                cv.getjTextField1().setText(rs.getString("we"));
+                rs.next();
+                cv.getjTextField2().setText(rs.getString("we"));
+                rs.next();
+                cv.getjTextField6().setText(rs.getString("we"));
+                rs.next();
+                cv.getjTextField7().setText(rs.getString("we"));
+                rs.next();
+                cv.getjTextField8().setText(rs.getString("we"));
+                rs.next();
+                cv.getjTextField9().setText(rs.getString("we"));
+            
+            // System.out.println(contador);
+        rs.first();
+        } catch (SQLException ex) {
+             System.out.println("error");
+        }
+        cv.setVisible(true);
 
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        // TODO add your handling code here:
-
-        new CT_ref(new javax.swing.JFrame(), true).setVisible(true);
-
+        CT_ref cr = new CT_ref(new javax.swing.JFrame(), true);
+        //Primis p = new Primis();
+        final String sql = "SELECT bebidas_id AS we, proveedor_id AS we2, nombre_bebida AS we3, other_details as we4"
+                + " FROM bebidas";
+        //System.out.println(sql);
+        
+        
+        
+        try {
+             //int contador=0;
+            ResultSet rs = db.query(sql);
+           
+           //  System.out.println(contador);
+           
+             //   contador ++;
+                rs.next();
+                cr.getjTextField1().setText(rs.getString("we"));
+                rs.next();
+                cr.getjTextField2().setText(rs.getString("we"));
+                rs.next();
+                cr.getjTextField4().setText(rs.getString("we"));
+                rs.next();
+                cr.getjTextField6().setText(rs.getString("we"));
+                rs.next();
+                cr.getjTextField7().setText(rs.getString("we"));
+                
+            
+            // System.out.println(contador);
+        rs.first();
+        } catch (SQLException ex) {
+             System.out.println("error");
+        }
+        cr.setVisible(true);
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        // TODO add your handling code here:
-
-        new CT_beb(new javax.swing.JFrame(), true).setVisible(true);
+        CT_beb cb = new CT_beb(new javax.swing.JFrame(), true);
+        //Primis p = new Primis();
+        final String sql = "SELECT bebidas_id AS we, proveedor_id AS we2, nombre_bebida AS we3, other_details as we4"
+                + " FROM bebidas";
+        //System.out.println(sql);
+        
+        
+        
+        try {
+             //int contador=0;
+            ResultSet rs = db.query(sql);
+           
+           //  System.out.println(contador);
+           
+             //   contador ++;
+                rs.next();
+                cb.getBeb1().setText(rs.getString("we"));
+               rs.next();
+                cb.getBeb2().setText(rs.getString("we"));
+                rs.next();
+                cb.getBeb3().setText(rs.getString("we"));
+                rs.next();
+                cb.getBeb4().setText(rs.getString("we"));
+                rs.next();
+                cb.getBeb5().setText(rs.getString("we"));
+                rs.next();
+                cb.getBeb6().setText(rs.getString("we"));
+                rs.next();
+                cb.getBeb7().setText(rs.getString("we"));
+                rs.next();
+                cb.getBeb8().setText(rs.getString("we"));
+                rs.next();
+                cb.getBeb9().setText(rs.getString("we"));
+                rs.next();
+                cb.getBeb10().setText(rs.getString("we"));
+                rs.next();
+                cb.getBeb11().setText(rs.getString("we"));
+                rs.next();
+                cb.getBeb12().setText(rs.getString("we"));
+                rs.next();
+                cb.getBeb13().setText(rs.getString("we"));
+                rs.next();
+                cb.getBeb14().setText(rs.getString("we"));
+                rs.next();
+                cb.getBeb15().setText(rs.getString("we"));
+                rs.next();
+                cb.getBeb16().setText(rs.getString("we"));
+                
+                
+            
+            // System.out.println(contador);
+        rs.first();
+        } catch (SQLException ex) {
+             System.out.println("error");
+        }
+        cb.setVisible(true);
 
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
 
-        new CT_pre(new javax.swing.JFrame(), true).setVisible(true);
+       CT_pre cp = new CT_pre(new javax.swing.JFrame(), true);
+        //Primis p = new Primis();
+        final String sql = "SELECT bebidas_id AS we, proveedor_id AS we2, nombre_bebida AS we3, other_details as we4"
+                + " FROM bebidas";
+        //System.out.println(sql);
+        
+        
+        
+        try {
+             //int contador=0;
+            ResultSet rs = db.query(sql);
+           
+           //  System.out.println(contador);
+           
+             //   contador ++;
+                rs.next();
+                cp.getPre1().setText(rs.getString("we"));
+                rs.next();
+                cp.getPre2().setText(rs.getString("we"));
+                rs.next();
+                cp.getPre3().setText(rs.getString("we"));
+                rs.next();
+                cp.getPre4().setText(rs.getString("we"));
+                rs.next();
+                cp.getPre5().setText(rs.getString("we"));
+                rs.next();
+                cp.getPre6().setText(rs.getString("we"));
+                rs.next();
+                cp.getPre7().setText(rs.getString("we"));
+                rs.next();
+                cp.getPre8().setText(rs.getString("we"));
+                rs.next();
+                cp.getPre9().setText(rs.getString("we"));
+                rs.next();
+                cp.getPre10().setText(rs.getString("we"));
+                rs.next();
+                cp.getPre11().setText(rs.getString("we"));
+                
+                
+                
+            
+            // System.out.println(contador);
+        rs.first();
+        } catch (SQLException ex) {
+             System.out.println("error");
+        }
+        cp.setVisible(true);
 
     }//GEN-LAST:event_jButton1ActionPerformed
 
@@ -128,6 +294,8 @@ public class Consumo_total extends javax.swing.JDialog {
      * @param args the command line arguments
      */
     public static void main(String args[]) {
+        Database po;
+        po = null;
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
@@ -155,7 +323,7 @@ public class Consumo_total extends javax.swing.JDialog {
         /* Create and display the dialog */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                Consumo_total dialog = new Consumo_total(new javax.swing.JFrame(), true);
+                Consumo_total dialog = new Consumo_total(new javax.swing.JFrame(), po );
                 dialog.addWindowListener(new java.awt.event.WindowAdapter() {
                     @Override
                     public void windowClosing(java.awt.event.WindowEvent e) {
